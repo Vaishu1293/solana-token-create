@@ -1,6 +1,61 @@
+Solana Wallet - EpTaCbp6hhHryne2zibG14PBjCfh13Pim3PvbELKK6Rb
+
+
+
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token create-token --url devnet
 Creating token DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W under program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
 
 Address:  DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W
 Decimals:  9
 
 Signature: wByByBeFWMnqf1Qk9zpBNUA5HZ5yTtrqR9WyaC6CyCmYD5hJw5HbwkQcK5MzZaYny8DhsCmaXAg5TeKkjgbnakQ
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token create-account DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W --url devnet
+Creating account 9MS6JJLhnaVsrrtYF3y5Sorzaa2mEivRsDAhMHgjBZnX
+
+Signature: NHeZoqdxJXt2AbJAqnBp2WaVjjDBbHmW3xoUw5gYKCoGmqXnz8aSy1WorvdsCueKJtVKCTnsbeonYUDcHaDv3jQ
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token balance DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W --url devnet
+0
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token mint DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W 1000 --url devnet
+Minting 1000 tokens
+  Token: DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W
+  Recipient: 9MS6JJLhnaVsrrtYF3y5Sorzaa2mEivRsDAhMHgjBZnX
+
+Signature: 39GaR1N2dcbZfgK6hLmLiPBM3VYExQDhBbp6Jv6j54UzrqWmNregcydDS496j12uxmzUYqHAhxTP1ZtBa2aj5YmF
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token balance DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W --url devnet
+1000
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token supply DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W --url devnet
+1000
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token authorize DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W mint --disable --url devnet
+Updating DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W
+  Current mint: HqhrhzxxwwePfsrpqQU4qTbULYj6rW1qPXk4ixmaVC2u
+  New mint: disabled
+
+Signature: 2Ay2GgPKScNT7nipd4VjiGmiF8ortvUgi5RrTk1snBHsVmnNJ6647S7pTj81qGanLVMGhV3NjiYwpNznG9f7533G
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token mint DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W 1000 --url devnet
+Minting 1000 tokens
+Minting 1000 tokens
+  Token: DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W
+  Recipient: 9MS6JJLhnaVsrrtYF3y5Sorzaa2mEivRsDAhMHgjBZnX
+Error: Client(Error { request: Some(SendTransaction), kind: RpcError(RpcResponseError { code: -32002, message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x5", data: SendTransactionPreflightFailure(RpcSimulateTransactionResult { err: Some(InstructionError(0, Custom(5))), logs: Some(["Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]", "Program log: Instruction: MintToChecked", "Program log: Error: the total supply of this token is fixed", "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4147 of 4147 compute units", "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x5"]), accounts: None, units_consumed: Some(4147), return_data: None, inner_instructions: None, replacement_blockhash: None }) }) })
+Minting: command not found
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token burn 9MS6JJLhnaVsrrtYF3y5Sorzaa2mEivRsDAhMHgjBZnX 1
+00 --url devnet
+Burn 100 tokens
+  Source: 9MS6JJLhnaVsrrtYF3y5Sorzaa2mEivRsDAhMHgjBZnX
+
+Signature: 3xxDsrS5yqG5BHbjWDw4xp3cHcncaY5fQMFkucL8vpjEb2oZeQSa5Vp71ihrAZgXdua6rpNvrqYqL4iXVcV4533w
+
+vaishalichandrashekhar@ADMIN:/mnt/d/2024/Block_Chain_Projects/_5_Solana_Token_Creation$ spl-token supply DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W --url devnet
+900
+
