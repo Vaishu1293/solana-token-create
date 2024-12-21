@@ -1,0 +1,6 @@
+Creating token DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W under program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+
+Address:  DRUErek66xjUW4fQ3ReL3q8Hbrg4SYNcdAwwbBQdM36W
+Decimals:  9
+
+Signature: wByByBeFWMnqf1Qk9zpBNUA5HZ5yTtrqR9WyaC6CyCmYD5hJw5HbwkQcK5MzZaYny8DhsCmaXAg5TeKkjgbnakQ
